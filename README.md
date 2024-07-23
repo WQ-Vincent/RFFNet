@@ -2,7 +2,9 @@
 
 Qiang Wang, Yuning Cui, Yawen Li, Yaping Ruan, Ben Zhu, [Wenqi Ren](https://scholar.google.com.hk/citations?user=VwfgfR8AAAAJ&hl=zh-CN&oi=ao)
 
-[![](https://img.shields.io/badge/ICLR-Paper-blue.svg)](https://openreview.net/forum?id=tyZ1ChGZIKO)
+[![](https://img.shields.io/badge/ACM%20MM-paper-blue.svg)]()
+
+### The code will be available soon.
 
 ## Citation
 If you find this project useful for your research, please consider citing:
