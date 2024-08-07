@@ -21,7 +21,7 @@ conda install pytorch=1.8.1 torchvision=0.9.1 -c pytorch
 pip install requirements.txt
 ~~~
 
-Train and Validation:
+Training and Evaluation:
 ```bash
 python train_RFFNet_DVD.py
 
@@ -82,19 +82,6 @@ FAID
 
 The other pairs were used for training our network.
 
-
-## Train And Evaluation
-```bash
-conda create -name rffnet python=3.8
-
-conda activate rffnet
-
-pip install requirements.txt
-
-python train_RFFNet_DVD.py
-
-python test.py
-```
 
 ## Citation
 If you find this project useful for your research, please consider citing:
