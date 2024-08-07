@@ -12,6 +12,7 @@ Extensive experimental results demonstrate that our method achieves state-of-the
 
 ## Network Architecture
 ![fig](./fig/arch.png)
+<<<<<<< HEAD
 
 ## Installation
 The project is built with PyTorch 3.8, PyTorch 1.8.1. CUDA 11.1, cuDNN 7.6.5
@@ -25,6 +26,8 @@ python train_RFFNet_DVD.py
 
 python test.py
 ```
+=======
+>>>>>>> fc349aceed840010726a9b3acee32172738b5393
 
 ## Dataset Preparation
 ### DVD Dataset
@@ -80,6 +83,23 @@ FAID
 
 The other pairs were used for training our network.
 
+<<<<<<< HEAD
+=======
+
+## Train And Evaluation
+```bash
+conda create -name rffnet python=3.8
+
+conda activate rffnet
+
+pip install requirements.txt
+
+python train_RFFNet_DVD.py
+
+python test.py
+```
+
+>>>>>>> fc349aceed840010726a9b3acee32172738b5393
 ## Citation
 If you find this project useful for your research, please consider citing:
 ~~~
