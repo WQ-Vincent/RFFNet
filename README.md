@@ -12,9 +12,9 @@ If you find this project useful for your research, please consider citing:
 @inproceedings{wang2024rffnet,
   title={RFFNet: Towards Robust and Flexible Fusion for Low-Light Image Denoising},
   author={Wang, Qiang and Cui, Yuning and Li, Yawen and Ruan, Yaping and Zhu, Ben and Ren, Wenqi},
-  booktitle={ACM International Conference on Multimedia},
+  booktitle={ACM Multimedia},
   year={2024}
 }
 ~~~
 ## Contact
-Should you have any question, please contact Qiang Wang.
+Should you have any questions, please contact Qiang Wang.
