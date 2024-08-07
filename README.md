@@ -15,20 +15,20 @@ Extensive experimental results demonstrate that our method achieves state-of-the
 
 ## Dataset Preparation
 ### DVD Dataset
-Please download the dataset from [link](https://drive.google.com/drive/folders/10FV0q_GAP4gjQUbQ78waezfyGO07AxlP?usp=share_link) first. 
+Please download the public dataset from [link](https://drive.google.com/drive/folders/10FV0q_GAP4gjQUbQ78waezfyGO07AxlP?usp=share_link). 
 
-Then, unzip the file into `Dataset` directory.
+Then, unzip the file into `dataset/DVD` directory.
 And the directory structure is organized as:
 
 ```
-Dataset
-├── DVD_train_raw
+DVD
+├── train_raw
 │     ├── RGB
 │     ├── NIR
-├── DVD_test
+├── test
 │     ├── RGB
 │     ├── NIR
-├── DVD_real
+├── real
 │     ├── RGB
 │     ├── NIR
 ```
@@ -40,50 +40,52 @@ Finally, create the training patches for faster data loading by
 And the directory structure now is organized as:
 
 ```
-Dataset
-├── DVD_train_raw
+DVD
+├── train_raw
 │     ├── RGB
 │     ├── NIR
-├── DVD_train
+├── train
 │     ├── RGB
 │     ├── NIR
-├── DVD_test
+├── test
 │     ├── RGB
 │     ├── NIR
-├── DVD_real
+├── real
 │     ├── RGB
 │     ├── NIR
 ```
 ### FAID Dataset
-...
+Please download the public dataset from [link](http://yaksoy.github.io/faid/).
+
+Then, unzip the file into `dataset/FAID` directory.
+And the directory structure is organized as:
+
+```
+DVD
+├── train_raw
+│     ├── RGB
+│     ├── NIR
+├── train
+│     ├── RGB
+│     ├── NIR
+├── test
+│     ├── RGB
+│     ├── NIR
+├── real
+│     ├── RGB
+│     ├── NIR
+```
+For example, `test_image_pairs.txt` and `val_image_pairs.txt` include the file names of the 256 test pairs and the file names of the 256 validation pairs used for our paper respectively. The other pairs were used for training our network.
+
+
 
 ## Train And Evaluation
 ```bash
-git clone (*代码发布时补充*)
-cd DVN
-
-export PYTHONPATH="${PYTHONPATH}:./"
 pip install requirements.txt
 
-# For the AutoEncoder (i.e. the network AE that provides supervision signals for DSEM) training, 
-# set MODEL.MODE in training.yml to `Recons`, and run:
-python train.py
+python train_RFFNet_DVD.py
 
-# After the AutoEncoder (i.e. AE) training, you can visualize the deep structure supervision signals of RGB/NIR by:
-python visualization/view_edgedetect.py
-
-# For the DVN training, 
-# set MODEL.MODE in training.yml to `Fusion`, and run:
-python train.py
-
-# You can evaluate the performance of DVN by:
 python test.py
-
-# Or you can evaluate the performance of DVN by:
-python test_real.py
-
-# You can visualize the calculated DIP by run:
-python visualization/view_dip.py
 ```
 
 ## Citation
