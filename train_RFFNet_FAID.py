@@ -31,7 +31,7 @@ DataLoaderTrain = module.DataLoaderTrain
 import losses
 from warmup_scheduler import GradualWarmupScheduler
 from pdb import set_trace as stx
-from model.get_model import get_model, get_pretrain, load_model
+from model.get_model import get_model, load_model
 import time
 import logging
 from logging import handlers
