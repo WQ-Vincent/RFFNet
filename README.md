@@ -15,7 +15,7 @@ Extensive experimental results demonstrate that our method achieves state-of-the
 
 ## Dataset Preparation
 ### DVD Dataset
-Please download the public dataset from [link](https://drive.google.com/drive/folders/10FV0q_GAP4gjQUbQ78waezfyGO07AxlP?usp=share_link). 
+Please download the public dataset from [DVD](https://drive.google.com/drive/folders/10FV0q_GAP4gjQUbQ78waezfyGO07AxlP?usp=share_link). 
 
 Then, unzip the file into `dataset/DVD` directory.
 And the directory structure is organized as:
@@ -26,9 +26,6 @@ DVD
 │     ├── RGB
 │     ├── NIR
 ├── test
-│     ├── RGB
-│     ├── NIR
-├── real
 │     ├── RGB
 │     ├── NIR
 ```
@@ -50,33 +47,25 @@ DVD
 ├── test
 │     ├── RGB
 │     ├── NIR
-├── real
-│     ├── RGB
-│     ├── NIR
 ```
 ### FAID Dataset
-Please download the public dataset from [link](http://yaksoy.github.io/faid/).
+Please download the public dataset from [FAID](http://yaksoy.github.io/faid/).
 
 Then, unzip the file into `dataset/FAID` directory.
 And the directory structure is organized as:
 
 ```
-DVD
-├── train_raw
-│     ├── RGB
-│     ├── NIR
+FAID
 ├── train
-│     ├── RGB
-│     ├── NIR
+│     ├── Objects_001_ambient.png
+│     ├── Objects_001_flash.png
+│     ├── ...
 ├── test
-│     ├── RGB
-│     ├── NIR
-├── real
-│     ├── RGB
-│     ├── NIR
+│     ├── ...
 ```
-For example, `test_image_pairs.txt` and `val_image_pairs.txt` include the file names of the 256 test pairs and the file names of the 256 validation pairs used for our paper respectively. The other pairs were used for training our network.
+`dataset/FAID/test_image_pairs.txt` and `dataset/FAID/val_image_pairs.txt` include the file names of the 256 test pairs and the file names of the 256 validation pairs respectively, following [RIDFnF](https://github.com/CGLab-GIST/RIDFnF). 
 
+The other pairs were used for training our network.
 
 
 ## Train And Evaluation
@@ -98,5 +87,5 @@ If you find this project useful for your research, please consider citing:
   year={2024}
 }
 ~~~
-## Contact
-Should you have any questions, please contact Qiang Wang.
+## Acknowledgements
+This repository is greatly inspired by [DVN](https://github.com/megvii-research/DVN).
