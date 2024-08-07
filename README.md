@@ -11,7 +11,7 @@ However, existing fusion-based methods fail to effectively suppress artifacts ca
 Extensive experimental results demonstrate that our method achieves state-of-the-art performance on NIR-guided RGB image denoising and flash-guided no-flash image denoising.
 
 ## Network Architecture
-![fig](./fig/intro_archi.png)
+![fig](./fig/arch.png)
 
 ## Dataset Preparation
 ### DVD Dataset
