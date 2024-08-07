@@ -70,6 +70,10 @@ The other pairs were used for training our network.
 
 ## Train And Evaluation
 ```bash
+conda create -name rffnet python=3.8
+
+conda activate rffnet
+
 pip install requirements.txt
 
 python train_RFFNet_DVD.py
