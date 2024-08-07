@@ -15,7 +15,7 @@ from collections import OrderedDict
 import importlib
 from tqdm import tqdm
 from pdb import set_trace as stx
-from model.get_model import get_model, get_pretrain, load_model
+from model.get_model import get_model, load_model
 from utils.tools import gather_patches_into_whole, validation_on_PSNR_and_SSIM, compute_psnr, compute_ssim
 from utils.tools import make_view
 from utils.dstools import getshow_bgr, getshow_ir
