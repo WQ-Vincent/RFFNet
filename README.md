@@ -11,7 +11,20 @@ However, existing fusion-based methods fail to effectively suppress artifacts ca
 Extensive experimental results demonstrate that our method achieves state-of-the-art performance on NIR-guided RGB image denoising and flash-guided no-flash image denoising.
 
 ## Network Architecture
-![fig](./fig/intro_archi.png)
+![fig](./fig/arch.png)
+
+## Installation
+The project is built with PyTorch 3.8, PyTorch 1.8.1. CUDA 11.1, cuDNN 7.6.5
+For installing, follow these instructions:
+~~~
+conda install pytorch=1.8.1 torchvision=0.9.1 -c pytorch
+pip install requirements.txt
+~~~
+```bash
+python train_RFFNet_DVD.py
+
+python test.py
+```
 
 ## Dataset Preparation
 ### DVD Dataset
@@ -66,16 +79,6 @@ FAID
 `dataset/FAID/test_image_pairs.txt` and `dataset/FAID/val_image_pairs.txt` include the file names of the 256 test pairs and the file names of the 256 validation pairs respectively, following [RIDFnF](https://github.com/CGLab-GIST/RIDFnF). 
 
 The other pairs were used for training our network.
-
-
-## Train And Evaluation
-```bash
-pip install requirements.txt
-
-python train_RFFNet_DVD.py
-
-python test.py
-```
 
 ## Citation
 If you find this project useful for your research, please consider citing:

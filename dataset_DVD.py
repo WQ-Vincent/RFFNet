@@ -12,7 +12,7 @@ from utils.dstools import (
     get_gt_rgb_with_channels, getshow_bgr, getshow_ir
 )
 
-NOISE_PARAM_FILE = './utils/noise_k.pkl'
+NOISE_PARAM_FILE = './dataset/DVD/noise_k.pkl'
 NOISE_PARAM = CalibratedNoiseParam(NOISE_PARAM_FILE)
 add_noise_func = AddNoise(NOISE_PARAM).do
 add_fix_noise = AddFixNoise(NOISE_PARAM).do
