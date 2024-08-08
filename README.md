@@ -14,26 +14,22 @@ Extensive experimental results demonstrate that our method achieves state-of-the
 ![fig](./fig/arch.png)
 
 ## Installation
-The project is built with PyTorch 3.8, PyTorch 1.8.1. CUDA 11.1, cuDNN 7.6.5
+The project is built with PyTorch 3.8, PyTorch 1.8.1, and CUDA 11.1.
 For installing, follow these instructions:
 ~~~
-conda install pytorch=1.8.1 torchvision=0.9.1 -c pytorch
-pip install requirements.txt
+conda create -n rffnet python=3.8 && conda activate rffnet
+
+pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+
+pip install -r requirements.txt
 ~~~
-
-Training and Evaluation:
-```bash
-python train_RFFNet_DVD.py
-
-python test.py
-```
 
 ## Dataset Preparation
 ### DVD Dataset
 Please download the public dataset from [DVD](https://drive.google.com/drive/folders/10FV0q_GAP4gjQUbQ78waezfyGO07AxlP?usp=share_link). 
 
 Then, unzip the file into `dataset/DVD` directory.
-And the directory structure is organized as:
+The directory structure is organized as:
 
 ```
 DVD
@@ -49,7 +45,7 @@ Finally, create the training patches for faster data loading by
 
 `python generate_train_patches.py`
 
-And the directory structure now is organized as:
+The directory structure is now organized as:
 
 ```
 DVD
@@ -67,7 +63,7 @@ DVD
 Please download the public dataset from [FAID](http://yaksoy.github.io/faid/).
 
 Then, unzip the file into `dataset/FAID` directory.
-And the directory structure is organized as:
+The directory structure is organized as:
 
 ```
 FAID
@@ -80,7 +76,7 @@ FAID
 ```
 `dataset/FAID/test_image_pairs.txt` and `dataset/FAID/val_image_pairs.txt` include the file names of the 256 test pairs and the file names of the 256 validation pairs respectively, following [RIDFnF](https://github.com/CGLab-GIST/RIDFnF). 
 
-The other pairs were used for training our network.
+The other pairs were used to train our network.
 
 
 ## Citation
