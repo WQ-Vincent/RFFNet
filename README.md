@@ -25,7 +25,6 @@ pip install -r requirements.txt
 ~~~
 
 ## Dataset Preparation
-### DVD Dataset
 Please download the public dataset from [DVD](https://drive.google.com/drive/folders/10FV0q_GAP4gjQUbQ78waezfyGO07AxlP?usp=share_link). 
 
 Then, unzip the file into `dataset/DVD` directory.
@@ -59,23 +58,6 @@ DVD
 │     ├── RGB
 │     ├── NIR
 ```
-### FAID Dataset
-Please download the public dataset from [FAID](http://yaksoy.github.io/faid/).
-
-Then, unzip the file into `dataset/FAID` directory.
-The directory structure is organized as:
-
-```
-FAID
-├── train
-│     ├── Objects_001_ambient.png
-│     ├── Objects_001_flash.png
-│     ├── ...
-├── test
-│     ├── ...
-```
-`dataset/FAID/test_image_pairs.txt` and `dataset/FAID/val_image_pairs.txt` include the file names of the 256 test pairs and the file names of the 256 validation pairs respectively, following [RIDFnF](https://github.com/CGLab-GIST/RIDFnF). 
-The other pairs are used for training.
 
 
 ## Citation
