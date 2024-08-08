@@ -201,7 +201,6 @@ for epoch in range(start_epoch, opt_train['NUM_EPOCHS'] + 1):
         print('model checkpoint saved')
 
     if epoch % opt['VAL_FREQ'] == 0:
-        opt['TEST']['SIGMA']=2
         psnr_2, ssim_2 = validation(net, opt)
         if psnr_2 <= 31.8: continue
         opt['TEST']['SIGMA']=4
