@@ -75,7 +75,7 @@ FAID
 │     ├── ...
 ```
 `dataset/FAID/test_image_pairs.txt` and `dataset/FAID/val_image_pairs.txt` include the file names of the 256 test pairs and the file names of the 256 validation pairs respectively, following [RIDFnF](https://github.com/CGLab-GIST/RIDFnF). 
-The other pairs were used for training.
+The other pairs are used for training.
 
 
 ## Citation
