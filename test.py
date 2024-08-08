@@ -3,7 +3,7 @@ import sys
 sys.path.append('..')
 
 from config import parse
-opt = parse('training_RFFNet_FAID.yml')
+opt = parse('training_RFFNet_DVD.yml')
 
 import cv2
 import torch
