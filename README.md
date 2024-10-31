@@ -1,8 +1,8 @@
 # RFFNet: Towards Robust and Flexible Fusion for Low-Light Image Denoising (ACM MM 2024)
 
-Qiang Wang, Yuning Cui, Yawen Li, Yaping Ruan, Ben Zhu, [Wenqi Ren](https://scholar.google.com.hk/citations?user=VwfgfR8AAAAJ&hl=zh-CN&oi=ao)
+Qiang Wang, Yuning Cui, Yawen Li, Yaping Ruan, Ben Zhu, Wenqi Ren
 
-[![](https://img.shields.io/badge/ACM%20MM-paper-blue.svg)]()
+[![paper](https://img.shields.io/badge/ACM%20MM-paper-blue.svg)](https://dl.acm.org/doi/10.1145/3664647.3680675)
 
 ## Abstract
 
